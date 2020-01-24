@@ -187,6 +187,18 @@ In particular:
   \item Going to be frequently updated
     \ei
 \ei
+
+**Next: advantages in red of the approach compared to manually doing
+**French version also (rosettaFish).
+**Example Stock Summary Template - took a while to fill out and find the
+info. Fine as one-time exercise but if annual then worth the effort to
+streamline it.
+**Idea - R package, people would have to get their outputs into a standard
+format, but then all figures/tables/text is automatically generated to give the
+stock summary.
+**Outcome - in theory, less work each year for people (if they create some code
+to standardise their outputs), can still use manual Word approach.
+**Example code - jump to knitr definition slide
 }
 % ----------------------------------------------------------
 
