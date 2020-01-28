@@ -323,18 +323,39 @@ Create an R package \textcolor{red}{{\tt stockSummary}} that has one master func
 Steps:
 
 \begin{enumerate}
-  \item Scoping -- decide what information to include, layout, format, different
-  formats for different situations?, etc. etc. \textcolor{red}{{Start in workshop,
-      will evolve with further feedback, to be finalised before step 2}}
+  \item Scoping -- decide what information to include
   \item Software -- small team to develop package
   \item Assessment analysts would have get their results into a standard format
 \end{enumerate}
 }
-%----------------------------------------------------------
 
-\frame{\frametitle{Software development}
+% ----------------------------------------------------------
 
-A small team to develop the package, based on concepts learned in previous
+\frame{\frametitle{1. Scoping}
+
+Scoping steps:
+
+\begin{enumerate}
+  \item What information to include
+  \item Decide on a consistent layout
+  \item Decide on what text, figures and tables
+  \item Different formats for different situations (species types?)
+  \item Feedback from others
+\end{enumerate}
+
+
+Workshop should go a long way to working these out.
+
+~\\
+
+\textcolor{red}{{These should be mostly finalised before starting software development!}}
+}
+% ----------------------------------------------------------
+
+\frame{\frametitle{2. Software development}
+
+A small team to develop the R package.
+Based on concepts learned from previous
 examples and at the TESA TTT workshop on tools for Transparent, Traceable and
 Transferable assessments (\href{https://github.com/pbs-assess/TTTworkshop}{\textcolor{blue}{see here}}):
 
