@@ -167,25 +167,29 @@ admb.version = 999
 
 We have been using a `dynamic report generation' approach for 10 years now.
 
+~\\
+
 In particular:
+
+~\\
   \bi
   \item Pacific Hake annual stock assessment ($\sim$200 pages, available
     \href{https://archive.fisheries.noaa.gov/wcr/publications/fishery_management/groundfish/whiting/hake-assessment-2019-final.pdf}{\textcolor{blue}{here}})
 
-    \bi
-      \item Conducted annually with US colleagues
-      \item Only one month between receiving final data and submitting
-        assessment
-      \item Managers and industry understand the format of the advice, so we
-        want to keep it consistent year-to-year
-    \ei
+%    \bi
+%      \item Conducted annually with US colleagues
+%      \item Only one month between receiving final data and submitting
+%        assessment
+%      \item Managers and industry understand the format of the advice, so we
+%        want to keep it consistent year-to-year
+%    \ei
 
   \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{\textcolor{blue}{here}})
-    \bi
-  \item Visualises (nearly) all our data on 113 species of Pacific groundfish
-  \item Identically formatted two pages for each species
-  \item Going to be frequently updated
-    \ei
+%    \bi
+%  \item Visualises (nearly) all our data on 113 species of Pacific groundfish
+%  \item Identically formatted two pages for each species
+%  \item Going to be frequently updated
+%    \ei
 \ei
 }
 
