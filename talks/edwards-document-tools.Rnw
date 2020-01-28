@@ -110,6 +110,7 @@
 %%                fig.height=4, echo=TRUE, results=TRUE, message=TRUE, warning=TRUE,
 %%                results='show', cache=TRUE, cache.path='knitr-cache/')
 <<load-everything, echo=FALSE,  message=FALSE, results='hide', warning=FALSE>>=
+library(knitr)
 opts_chunk$set(dev = 'cairo_ps',
                fig.path = 'knitr-cache/',
                fig.dpi = 96,
@@ -184,7 +185,11 @@ In particular:
 %        want to keep it consistent year-to-year
 %    \ei
 
-  \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{\textcolor{blue}{here}})
+  \item Groundfish synopsis report (available
+    \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{\textcolor{blue}{here}}
+    in English,
+    or
+    \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-fra.html}{\textcolor{blue}{here}} en fran\c{c}ais)
 %    \bi
 %  \item Visualises (nearly) all our data on 113 species of Pacific groundfish
 %  \item Identically formatted pages for each species
@@ -331,7 +336,7 @@ Took a while to fill out the stock summary template:
   \item manually putting into the Word file
 \ei
 
-\textcolor{blue}{Okay for a one-off exercise, but would be tedious to have to do manually each year.}
+\textcolor{blue}{OK for a one-off exercise, but would be tedious to have to do manually each year.}
 
 ~\\
 
@@ -348,11 +353,11 @@ Copy-and-pasting:
 
 \frame{\frametitle{Suggestion}
 
-Create an R package \textcolor{red}{{\tt stockSummary}} that has one master function that:
+Create an R package \textcolor{red}{stocksummary} that has functions that:
 
 \bi
   \item reads in model results
-  \item automatically produces a stock summary .pdf of standardised:
+  \item automatically produce a stock summary .pdf of standardised:
     \bi
       \item text
       \item figures
@@ -408,14 +413,14 @@ Transferable assessments (\href{https://github.com/pbs-assess/TTTworkshop}{\text
 \begin{enumerate}
   \item GitHub to share code and collaborate
   \item R for writing the package
-  \item Rmarkdown for producing the stock summary
+  \item RMarkdown for producing the stock summary
 \end{enumerate}
 
 Ideal aim would result in users just running something like:
 
 ~\\
 {\tt
-  stockSummary::create\_summary(input = clam\_area3\_results.RDS,
+  stocksummary::create\_summary(input = clam\_area3\_results.rds,
 
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~type = "invertebrates")
 }
@@ -429,15 +434,15 @@ May end up being a bit more complicated, but let's aim high.
 \frame{\frametitle{2. Software development}
 
 \bi
-\item We have templates for building properly-formatted:
+\item We have templates for building properly formatted:
   \bi
   \item CSAS Research Documents
   \item CSAS Science Responses
   \item DFO Technical Reports
   \ei
-\item These are built into our {\tt csasdown} R package.
+\item These are built into the csasdown R package.
 \item So we know how to develop templates.
-\item Already extensively use our {\tt rosettafish} R package to translate figures.
+\item Already extensively use the rosettafish R package to translate figures.
 \ei
 
 So we would not be starting from scratch.
@@ -455,7 +460,7 @@ coding etc.
 
 Lots of different model code being used across DFO to produce assessments.
 
-\textcolor{red}{No need to change that.}
+\textcolor{red}{No need to change that!}
 
 ~\\
 
@@ -479,9 +484,9 @@ and `{\tt Catch}`:
 ~\\
 Will require a bit of code writing for each analyst, but (hopefully) only in the first year.
 
-~\\
+% ~\\
 
-For simpler assessments and anyone not using R, a Word template can still be used.
+% For simpler assessments and anyone not using R, a Word template can still be used.
 }
 %----------------------------------------------------------
 
