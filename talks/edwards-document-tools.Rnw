@@ -187,7 +187,7 @@ In particular:
   \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{\textcolor{blue}{here}})
 %    \bi
 %  \item Visualises (nearly) all our data on 113 species of Pacific groundfish
-%  \item Identically formatted two pages for each species
+%  \item Identically formatted pages for each species
 %  \item Going to be frequently updated
 %    \ei
 \ei
@@ -210,7 +210,7 @@ Pacific Hake:
         want to keep it consistent year-to-year
 \ei
   \column{0.48\linewidth}
- \includegraphics[width=7cm]{images/hake-2019-rec.png}
+ \includegraphics[width=8cm]{images/hake-2019-rec.png}
 \end{columns}
 
 }
@@ -219,13 +219,14 @@ Pacific Hake:
 
 \frame{\frametitle{Examples of dynamic report generation}
 
-Groundfish synopsis report:
-
 \begin{columns}
   \column{0.38\linewidth}
+Groundfish synopsis report:
+
+  ~\\
   \bi
     \item Visualises (nearly) all our data on 113 species of Pacific groundfish
-    \item Identically formatted two pages for each species
+    \item Identically formatted pages for each species
     \item Going to be frequently updated
   \ei
   \column{0.48\linewidth}
@@ -238,13 +239,12 @@ Groundfish synopsis report:
 
 \frame{\frametitle{Examples of dynamic report generation}
 
-We have been using a `dynamic report generation' approach for 10 years now.
 
-{\textcolor{red}{Our approach satisifies several requirements:}}
+{\textcolor{red}{Our approach satisifies several requirements}}
+
+  ~\\
   \bi
-  \item Pacific Hake annual stock assessment ($\sim$200 pages, available
-    \href{https://archive.fisheries.noaa.gov/wcr/publications/fishery_management/groundfish/whiting/hake-assessment-2019-final.pdf}{\textcolor{blue}{here}})
-
+  \item Pacific Hake assessment:
     \bi
       \item Conducted annually with US colleagues \textcolor{red}{--
           seamlessly share code, reproducibility}
@@ -254,11 +254,11 @@ We have been using a `dynamic report generation' approach for 10 years now.
         want to keep it consistent year-to-year \textcolor{red}{-- consistency}
     \ei
 
-  \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{here})
+  \item Groundfish synopsis report:
     \bi
   \item Visualises (nearly) all our data on 113 species of Pacific groundfish
     \textcolor{red}{-- efficiency}
-  \item Identically formatted two pages for each species \textcolor{red}{-- consistency}
+  \item Identically formatted pages for each species \textcolor{red}{-- consistency}
   \item Going to be frequently updated \textcolor{red}{-- efficiency, reproducibility}
     \ei
 \ei
@@ -304,14 +304,15 @@ Similarly, you can create \textcolor{red}{tables, figures and all text} using th
 
 ~\\
 
-\textcolor{blue}{Hake} -- when the base model changes, we change the R variable `{\tt base.model.dir}`
+\textcolor{blue}{Hake (very simplified)} -- when the base model changes, we change the R variable `{\tt base.model.dir}`
 at the beginning of our code to point to the new directory of model results,
 then rebuild the full document.
 
 ~\\
 
-\textcolor{blue}{Groundfish Synopsis report} -- once the two-page layout of data for each species
-was finalised, we call the same code to produce that layout for all 113 species.
+\textcolor{blue}{Groundfish Synopsis report (very simplified)} -- write the code for
+the two-page layout of the data, then call the same code to produce that layout
+for all 113 species.
 
 ~\\
 \textcolor{red}{Caveat -- obviously a lot of work to get to that stage for both examples.}
