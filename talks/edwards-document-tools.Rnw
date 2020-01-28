@@ -138,7 +138,7 @@ admb.version = 999
 
 \title[knitr]{~\\ Modern collaborative tools for automatically \\
   generating standardised documents}
-\author{Andrew Edwards\\
+\author{Andrew Edwards and Sean Anderson\\
   ~\\
   \textcolor{blue}{Pacific Biological Station, Nanaimo, BC}}
 % \institute{{\textcolor{blue}{Pacific Biological Station, Nanaimo, BC}\\
@@ -174,32 +174,51 @@ In particular:
 
     \bi
       \item Conducted annually with US colleagues
-      \item Very short timeline -- one month between receiving final data and submitting
+      \item Only one month between receiving final data and submitting
         assessment
       \item Managers and industry understand the format of the advice, so we
         want to keep it consistent year-to-year
     \ei
 
-  \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{here})
+  \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{\textcolor{blue}{here}})
     \bi
   \item Visualises (nearly) all our data on 113 species of Pacific groundfish
   \item Identically formatted two pages for each species
   \item Going to be frequently updated
     \ei
 \ei
-
-**Next: advantages in red of the approach compared to manually doing
-**French version also (rosettaFish).
-**Example Stock Summary Template - took a while to fill out and find the
-info. Fine as one-time exercise but if annual then worth the effort to
-streamline it.
-**Idea - R package, people would have to get their outputs into a standard
-format, but then all figures/tables/text is automatically generated to give the
-stock summary.
-**Outcome - in theory, less work each year for people (if they create some code
-to standardise their outputs), can still use manual Word approach.
-**Example code - jump to knitr definition slide
 }
+
+%----------------------------------------------------------
+
+\frame{\frametitle{Examples of dynamic report generation}
+
+We have been using a `dynamic report generation' approach for 10 years now.
+
+{\textcolor{red}{Our approach satisifies several requirements:}}
+  \bi
+  \item Pacific Hake annual stock assessment ($\sim$200 pages, available
+    \href{https://archive.fisheries.noaa.gov/wcr/publications/fishery_management/groundfish/whiting/hake-assessment-2019-final.pdf}{\textcolor{blue}{here}})
+
+    \bi
+      \item Conducted annually with US colleagues \textcolor{red}{--
+          seamlessly share code, reproducibility}
+      \item Only one month between receiving final data and submitting
+        assessment \textcolor{red}{-- efficiency}
+      \item Managers and industry understand the format of the advice, so we
+        want to keep it consistent year-to-year \textcolor{red}{-- consistency}
+    \ei
+
+  \item Groundfish synopsis report (available \href{http://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html}{here})
+    \bi
+  \item Visualises (nearly) all our data on 113 species of Pacific groundfish
+    \textcolor{red}{-- efficiency}
+  \item Identically formatted two pages for each species \textcolor{red}{-- consistency}
+  \item Going to be frequently updated \textcolor{red}{-- efficiency, reproducibility}
+    \ei
+\ei
+}
+
 % ----------------------------------------------------------
 
 \frame{\frametitle{Background}
@@ -231,6 +250,19 @@ For next assessment (Yellowmouth Rockfish)
 %----------------------------------------------------------
 
 \frame{\frametitle{During CSAS review meeting}
+
+
+**Next: advantages in red of the approach compared to manually doing
+**French version also (rosettaFish).
+**Example Stock Summary Template - took a while to fill out and find the
+info. Fine as one-time exercise but if annual then worth the effort to
+streamline it.
+**Idea - R package, people would have to get their outputs into a standard
+format, but then all figures/tables/text is automatically generated to give the
+stock summary.
+**Outcome - in theory, less work each year for people (if they create some code
+to standardise their outputs), can still use manual Word approach.
+**Example code - jump to knitr definition slide
 
 \bi
 \item In the review meeting a lengthy `discussion' was ensuing about a survey series that we hadn't used.
