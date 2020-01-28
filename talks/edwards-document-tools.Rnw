@@ -324,7 +324,7 @@ Steps (SSS!):
 
 \begin{enumerate}
   \item Scoping -- decide what information to include
-  \item Software -- small team to develop package
+  \item Software -- small team to develop R package
   \item Standardising -- analysts would have get their results into a standard format
 \end{enumerate}
 }
@@ -424,13 +424,13 @@ and `{\tt Catch}`:
 ~~~~~~  1992   1200
 }
 
-(Units will have to be saved as a variable).
+% (Units will have to be saved as a variable).
 
 Will require a bit of code writing for each analyst, but (hopefully) only in the first year.
 
 ~\\
 
-For simpler assessment and anyone not using R, can still use the Word template.
+For simpler assessments and anyone not using R, a Word template can still be used.
 }
 %----------------------------------------------------------
 
