@@ -298,7 +298,39 @@ Copy-and-pasting:
 \ei
 }
 
+% ----------------------------------------------------------
+
+\frame{\frametitle{Suggestion}
+
+Create an R package \textcolor{red}{{\tt stockSummary}} that has one master function that:
+
+\bi
+  \item reads in model results
+  \item automatically produces a stock summary .pdf of standardised:
+    \bi
+      \item text
+      \item figures
+      \item tables
+    \ei
+  \item automatically creates both the English and French versions
+\ei
+}
+
+% ----------------------------------------------------------
+
+\frame{\frametitle{To get there}
+
+Steps:
+
+\begin{enumerate}
+  \item Scoping -- decide what information to go in, layout, format, different
+  formats for different situations, etc. \textcolor{red}{{Start in workshop,
+      will evolve with further feedback, to be finalised before step 2}
+  \item Software -- small team to develop package
+
+
 %----------------------------------------------------------
+
 
 \frame{\frametitle{During CSAS review meeting}
 
