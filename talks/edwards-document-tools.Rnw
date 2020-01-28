@@ -377,7 +377,29 @@ Ideal aim would result in users just running something like:
 ~\\
 May end up being a bit more complicated, but let's aim high.
 }
-%----------------------------------------------------------
+
+% ----------------------------------------------------------
+
+\frame{\frametitle{2. Software development}
+
+\bi
+\item We have templates for building properly-formatted:
+  \bi
+  \item CSAS Research Documents
+  \item CSAS Science Responses
+  \item DFO Technical Reports
+  \ei
+\item These are built into our {\tt csasdown} R package.
+\item So we know how to develop templates.
+\item Already extensively use our {\tt rosettafish} R package to translate figures.
+\ei
+
+So we would not be starting from scratch.
+}
+
+% ----------------------------------------------------------
+
+
 
 \frame{\frametitle{3. Standardising}
 
@@ -411,21 +433,5 @@ Will require a bit of code writing for each analyst, but (hopefully) only in the
 For simpler assessment and anyone not using R, can still use the Word template.
 }
 %----------------------------------------------------------
-
-\frame{\frametitle{Even better news}
-
-\bi
-\item We have templates for building properly-formatted:
-  \bi
-  \item CSAS Research Document
-  \item CSAS Science Response
-  \item DFO Technical Report
-  \ei
-\item These are built into csasdown R package.
-\item Will show that later.
-\item First showing simple knitr example with exercises
-  to understand the idea of dynamic report generation.
-\ei
-}
 
 \end{document}
