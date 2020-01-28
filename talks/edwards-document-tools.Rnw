@@ -441,6 +441,10 @@ May end up being a bit more complicated, but let's aim high.
 \ei
 
 So we would not be starting from scratch.
+
+~\\
+The package would take care of a lot of the behind-the-scenes formatting,
+coding etc.
 }
 
 % ----------------------------------------------------------
@@ -472,6 +476,7 @@ and `{\tt Catch}`:
 
 % (Units will have to be saved as a variable).
 
+~\\
 Will require a bit of code writing for each analyst, but (hopefully) only in the first year.
 
 ~\\
