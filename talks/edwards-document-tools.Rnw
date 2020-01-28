@@ -242,6 +242,35 @@ You have code that says:
 
 This is done through R; the variable \textcolor{blue}{{\tt prob.healthy}} is
 defined from some model output.
+
+\pause
+~\\
+
+\textcolor{red}{The key concept is that if }\textcolor{blue}{{\tt
+    prob.healthy}}\textcolor{red}{~changes (e.g.~different model output), you
+  just re-run this code and your text is automatically updated.}
+}
+
+% ----------------------------------------------------------
+
+\frame{\frametitle{What is dynamic report generation?}
+
+Similarly, you can create \textcolor{red}{tables, figures and all text} using this approach.
+
+~\\
+
+\textcolor{blue}{Hake} -- when the base model changes, we change the R variable `{\tt base.model.dir}`
+at the beginning of our code to point to the new directory of model results,
+then rebuild the full document.
+
+~\\
+
+\textcolor{blue}{Groundfish Synopsis report} -- once the two-page layout of data for each species
+was finalised, we call the same code to produce that layout for all 113 species.
+
+~\\
+\textcolor{red}{Caveat -- obviously a lot of work to get to that stage for both examples.}
+
 }
 
 %----------------------------------------------------------
