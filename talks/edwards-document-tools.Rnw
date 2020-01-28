@@ -273,6 +273,31 @@ was finalised, we call the same code to produce that layout for all 113 species.
 
 }
 
+% ----------------------------------------------------------
+
+\frame{\frametitle{Stock summary templates}
+
+Took a while to fill out the stock summary template:
+
+\bi
+  \item Finding the information from a Res Doc (or similar)
+  \item Maybe having to do the odd extra calculation
+  \item Manually putting into the Word file
+\ei
+
+\textcolor{blue}{Okay for a one-off exercise, but would be tedious to have to do manually each year.}
+
+~\\
+
+Copy-and-pasting:
+\bi
+  \item is not traceable or reproducible
+  \item not efficient
+  \item can introduce errors
+  \item can mess up formatting
+\ei
+}
+
 %----------------------------------------------------------
 
 \frame{\frametitle{During CSAS review meeting}
