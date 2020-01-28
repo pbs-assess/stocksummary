@@ -280,9 +280,9 @@ was finalised, we call the same code to produce that layout for all 113 species.
 Took a while to fill out the stock summary template:
 
 \bi
-  \item Finding the information from a Res Doc (or similar)
-  \item Maybe having to do the odd extra calculation
-  \item Manually putting into the Word file
+  \item finding the information from a Res Doc (or similar)
+  \item maybe having to do the odd extra calculation
+  \item manually putting into the Word file
 \ei
 
 \textcolor{blue}{Okay for a one-off exercise, but would be tedious to have to do manually each year.}
@@ -323,12 +323,39 @@ Create an R package \textcolor{red}{{\tt stockSummary}} that has one master func
 Steps:
 
 \begin{enumerate}
-  \item Scoping -- decide what information to go in, layout, format, different
-  formats for different situations, etc. \textcolor{red}{{Start in workshop,
-      will evolve with further feedback, to be finalised before step 2}
+  \item Scoping -- decide what information to include, layout, format, different
+  formats for different situations?, etc. etc. \textcolor{red}{{Start in workshop,
+      will evolve with further feedback, to be finalised before step 2}}
   \item Software -- small team to develop package
+  \item Assessment analysts would have get their results into a standard format
+\end{enumerate}
+}
+%----------------------------------------------------------
 
+\frame{\frametitle{Software development}
 
+A small team to develop the package, based on concepts learned in previous
+examples and at the TESA TTT workshop on tools for Transparent, Traceable and
+Transferable assessments (\href{https://github.com/pbs-assess/TTTworkshop}{\textcolor{blue}{see here}}):
+
+\begin{enumerate}
+  \item GitHub to share code and collaborate
+  \item R for writing the package
+  \item Rmarkdown for producing the stock summary
+\end{enumerate}
+
+Ideal aim would result in users just running something like:
+
+~\\
+{\tt
+  stockSummary::create\_summary(input = clam\_area3\_results.RDS,
+
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~type = "invertebrates")
+}
+
+~\\
+May end up being a bit more complicated, but let's aim high.
+}
 %----------------------------------------------------------
 
 
