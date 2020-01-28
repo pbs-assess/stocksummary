@@ -221,30 +221,27 @@ We have been using a `dynamic report generation' approach for 10 years now.
 
 % ----------------------------------------------------------
 
-\frame{\frametitle{Background}
+\frame{\frametitle{What is dynamic report generation?}
 
-For first assessment (Pacific Ocean Perch, 2010) I was involved in:
-\bi
-  \item Co-author insisted on using Word
-  \item Catch-age model uses Awatea software, which had clunky Excel input format
-  \item Co-author spotted an error a few days before submission.
-  \item Thus, we had to re-run everything...
-  \pause
-  \item ...AND re-write some text...
-  \item ...AND manually put the updated figures and tables back into Word.
-    \textcolor{red}{TEDIOUS!!!}
-\ei
-\pause
-For next assessment (Yellowmouth Rockfish)
-\bi
-  \item Rowan created way of running Awatea from R
-  \item I created \textcolor{blue}{Sweave} approach to automating the production of figures for simulations, and their final input into the stock assessment document.
-  \pause
-  \item Again, co-author found a minor error.
-  \item Thus we had to re-run everything (easier then before)...
-  \item AND re-write some text (same as before, but nothing really changed)...
-  \item AND redo all the 50 pages or so of figures and tables. \textcolor{red}{EASY!!!}
-\ei
+Basically, instead of writing:
+
+~\\
+
+\textcolor{blue}{The probability of being in the healthy zone is 75\%.}
+
+~\\
+
+You have code that says:
+
+~\\
+
+\textcolor{blue}{{\tt The probability of being in the healthy zone is }`{\tt r
+    prob.healthy}`{\tt \%}.}
+
+~\\
+
+This is done through R; the variable \textcolor{blue}{{\tt prob.healthy}} is
+defined from some model output.
 }
 
 %----------------------------------------------------------
