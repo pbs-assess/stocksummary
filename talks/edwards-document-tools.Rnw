@@ -193,6 +193,47 @@ In particular:
 
 \frame{\frametitle{Examples of dynamic report generation}
 
+Pacific Hake:
+
+\begin{columns}
+  \column{0.38\linewidth}
+%  \centering
+\bi
+  \item Conducted annually with US colleagues
+  \item Only one month between receiving final data and submitting
+       assessment
+  \item Managers and industry understand the format of the advice, so we
+        want to keep it consistent year-to-year
+\ei
+  \column{0.48\linewidth}
+ \includegraphics[width=7cm]{images/hake-2019-rec.png}
+\end{columns}
+
+}
+
+%----------------------------------------------------------
+
+\frame{\frametitle{Examples of dynamic report generation}
+
+Groundfish synopsis report:
+
+\begin{columns}
+  \column{0.38\linewidth}
+  \bi
+    \item Visualises (nearly) all our data on 113 species of Pacific groundfish
+    \item Identically formatted two pages for each species
+    \item Going to be frequently updated
+  \ei
+  \column{0.48\linewidth}
+  \includegraphics[height=7cm]{images/gf-dogfish.png}
+\end{columns}
+
+}
+
+%----------------------------------------------------------
+
+\frame{\frametitle{Examples of dynamic report generation}
+
 We have been using a `dynamic report generation' approach for 10 years now.
 
 {\textcolor{red}{Our approach satisifies several requirements:}}
