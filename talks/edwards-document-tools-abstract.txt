@@ -1,0 +1,31 @@
+Modern collaborative tools for automatically generating standardised documents
+
+Andrew M. Edwards and Sean C. Anderson
+
+Pacific Biological Station, Fisheries and Oceans Canada, 3190 Hammond Bay Road,
+Nanaimo, BC, V9T 6N7, Canada.
+
+Modern computational tools allow efficient generation of scientific documents by
+teams of analysts. The programming language R is widely used in DFO for making
+calculations and generating figures for stock assessments. The R package
+RMarkdown is used to generate dynamic reports from the calculations. And Git and
+GitHub allow collaborators to easily share and update their code. Two recent
+examples from Pacific Region are the annual Pacific Hake stock assessment and a
+synopsis of the data on 113 species of groundfish in British
+Columbia. Advantages of using the modern tools are reproducibility, efficiency
+(given the short time between receiving data and submitting the hake
+assessment, and the need to generate the same figures for all 113 species of
+groundfish), and consistency (the hake advice is presented in a consistent
+manner from year to year, and the groundfish data are consistent between species).
+
+The key to dynamic report generation is that instead of writing
+"The probability of being in the healthy zone is 0.75", the analyst has code
+that says "The probability of being in the healthy zone is `r prob.healthy`". The
+R variable 'prob.healthy' is the result of model calculations in R, but when the calculations
+are updated (say, with new data) and the value of 'prob.healthy' changes, the
+text will automatically be updated and be correct. This concept extends to
+figures and tables. Such automatic generation avoids time-consuming and
+error-prone manual copy-and-pasting. For stock summaries, it is proposed that an
+R package be created to automatically read in results and produce a
+standard stock summary, including text, figures and tables in English and
+French.
